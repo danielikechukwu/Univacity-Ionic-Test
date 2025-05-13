@@ -1,0 +1,7 @@
+{
+  "name": "univacity-ionic-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
