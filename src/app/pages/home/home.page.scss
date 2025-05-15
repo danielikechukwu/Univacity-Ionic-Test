@@ -88,8 +88,8 @@ ion-select::part(text) {
     gap: 6px;
 
     &-icon {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
     }
 
     span {
@@ -98,6 +98,7 @@ ion-select::part(text) {
       font-weight: 500;
       font-size: 16px;
     }
+
   }
 
   #filter {
@@ -105,11 +106,10 @@ ion-select::part(text) {
     justify-content: center;
     align-items: center;
     gap: 6px;
-     border: 1px solid red;
 
     &-icon {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
     }
 
     span {
@@ -117,6 +117,19 @@ ion-select::part(text) {
       font-family: $font-family-primary;
       font-weight: 500;
       font-size: 16px;
+    }
+
+    .custom-badge {
+      --background: #ff5733;
+      --color: white;
+      font-size: 10px;
+      font-weight: bold;
+      width: 23px;
+      height: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
     }
   }
 }

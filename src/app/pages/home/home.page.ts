@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonSelect, IonSelectOption, IonItem, ModalController } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonSelect, IonSelectOption, IonItem, ModalController, IonBadge } from '@ionic/angular/standalone';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 
 @Component({
@@ -7,7 +7,7 @@ import { ModalComponent } from 'src/app/components/modal/modal.component';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonSelect, IonSelectOption, IonItem],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonSelect, IonSelectOption, IonItem, IonBadge],
 })
 
 export class HomePage implements OnInit, OnDestroy {
