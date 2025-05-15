@@ -1,11 +1,10 @@
-#container {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-  position: absolute;
+$font-family-primary: 'Work Sans', sans-serif;
+
+#container {
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
@@ -24,4 +23,100 @@
 
 #container a {
   text-decoration: none;
+}
+
+.search {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.icon {
+  width: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  #back-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.select-dropdown {
+  //border: 1px solid black;
+  flex: 1;
+}
+
+.custom-item {
+  --background: #fff;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #ccc;
+  --border-radius: 8px;
+}
+
+ion-select::part(label) {
+  color: var(--Colors-Brand-Neutral-Secondary-600, rgba(93, 93, 93, 1));
+  font-family: $font-family-primary;
+  font-weight: 400;
+}
+
+ion-select::part(text) {
+  color: var(--Colors-Brand-Neutral-800, rgba(69, 69, 69, 1));
+  font-family: $font-family-primary;
+  font-weight: 500;
+}
+
+.custom-hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  padding: 1rem 0rem .5rem 0rem;
+
+  #sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      color: var(--Colors-Brand-Neutral-800, rgba(69, 69, 69, 1));
+      font-family: $font-family-primary;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  #filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+     border: 1px solid red;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      color: var(--Colors-Brand-Neutral-800, rgba(69, 69, 69, 1));
+      font-family: $font-family-primary;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
 }

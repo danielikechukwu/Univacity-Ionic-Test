@@ -1,20 +1,40 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header> -->
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <div class="search">
+
+    <div class="icon">
+      <img id="back-icon" src="../../../assets/icon/back.svg" alt="back icon" />
+    </div>
+
+    <div class="select-dropdown">
+      <ion-item class="custom-item">
+        <ion-select label="What do you want to study?" label-placement="floating">
+          <ion-select-option value="apple">Computer Technologies</ion-select-option>
+          <ion-select-option value="banana">Business Adminitration</ion-select-option>
+          <ion-select-option value="orange">Clinicals </ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+  </div>
+
+  <div class="filter">
+    <div id="sort">
+      <img id="sort-icon" src="../../../assets/icon/sort.svg" alt="back icon" />
+      <span>Sort</span>
+    </div>
+    <div id="filter" (click)="openModal()">
+      <img id="filter-icon" src="../../../assets/icon/filter.svg" alt="back icon" />
+      <span>Filter</span>
+    </div>
+  </div>
+
+  <hr class="custom-hr" />
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>Ready to create an app?</p>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+
 </ion-content>
